@@ -1,0 +1,15 @@
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\bin\Debug\Dungeon Master Tools.exe.config
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\bin\Debug\Dungeon Master Tools.exe
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\bin\Debug\Dungeon Master Tools.pdb
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon Master Tools.csprojAssemblyReference.cache
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.Home.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.Properties.Resources.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon Master Tools.csproj.GenerateResource.cache
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon Master Tools.csproj.CoreCompileInputs.cache
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon Master Tools.exe
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon Master Tools.pdb
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.NPCs.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.TYPE_VManage.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.TypeVAdd.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.Places_Manage.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.AddLocation.resources
