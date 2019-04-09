@@ -280,5 +280,29 @@ namespace Dungeon_Master_Tools
                 txtDescription.Text = ((ListViewItem)listViewPlaces.SelectedItems[0]).SubItems[3].Text;
             }
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string query = "UPDATE PLACES SET DESCR = '" + txtDescription.Text + "', NAME = '" + txtName.Text + "' WHERE PLACE_ID = " + txtPlace_id.Text;
+            try
+            {
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                        }
+                    }
+                }
+                MessageBox.Show("Saved!");
+            }
+            catch
+            {
+                MessageBox.Show("An error occurred in btnSave_Click.");
+            }
+            conn.Close();
+        }
     }
 }

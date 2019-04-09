@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TODO: Global change. Add Save button to each Database manager window. Save_click() should save any edits to the selected item.
+//TODO: Global change. Add Order by NAME to each Database manager window. The default will order all items by Alphabetical order.
 namespace Dungeon_Master_Tools
 {
     public partial class Home : Form

@@ -35,7 +35,7 @@ namespace Dungeon_Master_Tools
                 "SELECT " +
                 "   n.*, " +
                 "   oc.DESCR as OCCUPATION, " +
-                "   p.DESCR as HOME_CITY " +
+                "   p.NAME as HOME_CITY " +
                 "FROM NPCS n " +
                 "JOIN TYPE_V oc on n.OCCUPATION_ID = oc.TYPE_ID " +
                 "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID";
@@ -138,6 +138,8 @@ namespace Dungeon_Master_Tools
 
         public void populateFilters()
         {
+            comboBoxPrimaryFilter.Items.Clear();
+            comboBoxSecondaryFilter.Items.Clear();
             List<string> cities = new List<string>();
             cities = AllNPCs.Select(x => x.HOME_CITY).Distinct().ToList();
 
@@ -147,11 +149,11 @@ namespace Dungeon_Master_Tools
             }
 
             List<string> occupations = new List<string>();
-            occupations = AllNPCs.Select(x => x.HOME_CITY).Distinct().ToList();
+            occupations = AllNPCs.Select(x => x.OCCUPATION).Distinct().ToList();
 
             foreach (var occupation in occupations)
             {
-                comboBoxPrimaryFilter.Items.Add(occupation);
+                comboBoxSecondaryFilter.Items.Add(occupation);
             }
         }
 
@@ -161,16 +163,21 @@ namespace Dungeon_Master_Tools
             ListNPC.Clear();
 
             listViewNPCs.Items.Clear();
+
+            string additionalFilter = "";
+            if (comboBoxSecondaryFilter.SelectedItem != null)
+                additionalFilter = " AND oc.DESCR = '" + comboBoxSecondaryFilter.SelectedItem.ToString() + "'";
+
             conn.Open();
             string query =
                 "SELECT " +
                 "   n.*," +
                 "   oc.DESCR as OCCUPATION," +
-                "   p.DESCR as HOME_CITY" +
+                "   p.NAME as HOME_CITY " +
                 "FROM NPCS n " +
                 "JOIN TYPE_V oc on n.OCCUPATION_ID = oc.TYPE_ID " +
-                "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID" +
-                "WHERE hc.DESCR = '" + comboBoxPrimaryFilter.SelectedItem + "'";
+                "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID " +
+                "WHERE p.NAME = '" + comboBoxPrimaryFilter.SelectedItem + "'" + additionalFilter;
             try
             {
                 using (SqlCommand command = new SqlCommand(query, conn))
@@ -215,16 +222,21 @@ namespace Dungeon_Master_Tools
             ListNPC.Clear();
 
             listViewNPCs.Items.Clear();
+
+            string additionalFilter = "";
+            if (comboBoxPrimaryFilter.SelectedItem != null)
+                additionalFilter = " AND p.NAME = '" + comboBoxPrimaryFilter.SelectedItem.ToString() + "'";
+
             conn.Open();
             string query =
                 "SELECT " +
                 "   n.*," +
                 "   oc.DESCR as OCCUPATION," +
-                "   p.DESCR as HOME_CITY" +
+                "   p.NAME as HOME_CITY " +
                 "FROM NPCS n " +
                 "JOIN TYPE_V oc on n.OCCUPATION_ID = oc.TYPE_ID " +
-                "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID" +
-                "WHERE oc.DESCR = '" + comboBoxSecondaryFilter.SelectedItem + "'";
+                "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID " +
+                "WHERE oc.DESCR = '" + comboBoxSecondaryFilter.SelectedItem + "'" + additionalFilter;
 
             try
             {
@@ -268,7 +280,7 @@ namespace Dungeon_Master_Tools
         {
             if (listViewNPCs.SelectedItems.Count == 1)
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to delete " + txtDescription.Text + "?", "Confirmation", MessageBoxButtons.YesNoCancel);
+                DialogResult result = MessageBox.Show("Are you sure you want to delete " + txtName.Text + "?", "Confirmation", MessageBoxButtons.YesNoCancel);
                 if (result == DialogResult.Yes)
                 {
                     AllNPCs.Clear();
@@ -302,7 +314,8 @@ namespace Dungeon_Master_Tools
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
+            NPCsAdd newNPC = new NPCsAdd();
+            newNPC.Show();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -319,9 +332,9 @@ namespace Dungeon_Master_Tools
             conn.Open();
             string query =
                 "SELECT " +
-                "   n.*," +
-                "   oc.DESCR as OCCUPATION," +
-                "   p.DESCR as HOME_CITY" +
+                "   n.*, " +
+                "   oc.DESCR as OCCUPATION, " +
+                "   p.NAME as HOME_CITY " +
                 "FROM NPCS n " +
                 "JOIN TYPE_V oc on n.OCCUPATION_ID = oc.TYPE_ID " +
                 "JOIN PLACES p on n.HOME_CITY_ID = p.PLACE_ID";
@@ -366,7 +379,7 @@ namespace Dungeon_Master_Tools
 
         private void btnOpenOrganization_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            MessageBox.Show("Not implemented yet!");
         }
 
         private void listViewNPCs_SelectedIndexChanged(object sender, EventArgs e)

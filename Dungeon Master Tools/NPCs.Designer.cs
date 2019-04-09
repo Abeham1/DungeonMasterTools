@@ -87,6 +87,8 @@
             // 
             // comboBoxPrimaryFilter
             // 
+            this.comboBoxPrimaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxPrimaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxPrimaryFilter.FormattingEnabled = true;
             this.comboBoxPrimaryFilter.Location = new System.Drawing.Point(12, 417);
             this.comboBoxPrimaryFilter.Name = "comboBoxPrimaryFilter";
@@ -96,6 +98,8 @@
             // 
             // comboBoxSecondaryFilter
             // 
+            this.comboBoxSecondaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxSecondaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxSecondaryFilter.FormattingEnabled = true;
             this.comboBoxSecondaryFilter.Location = new System.Drawing.Point(139, 417);
             this.comboBoxSecondaryFilter.Name = "comboBoxSecondaryFilter";

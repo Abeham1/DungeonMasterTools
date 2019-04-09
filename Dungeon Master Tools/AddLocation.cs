@@ -83,6 +83,7 @@ namespace Dungeon_Master_Tools
             txtDescription.Clear();
             comboBoxParent.SelectedItem = 0;
             txtName.Clear();
+            conn.Close();
         }
     }
 }

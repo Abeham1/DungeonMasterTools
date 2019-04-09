@@ -44,6 +44,7 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblParent = new System.Windows.Forms.Label();
             this.lblFilterParent = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listViewPlaces
@@ -61,6 +62,7 @@
             this.listViewPlaces.TabIndex = 0;
             this.listViewPlaces.UseCompatibleStateImageBehavior = false;
             this.listViewPlaces.View = System.Windows.Forms.View.Details;
+            this.listViewPlaces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewPlaces_ColumnClick);
             this.listViewPlaces.SelectedIndexChanged += new System.EventHandler(this.listViewPlaces_SelectedIndexChanged);
             // 
             // columnHeaderName
@@ -186,11 +188,22 @@
             this.lblFilterParent.TabIndex = 13;
             this.lblFilterParent.Text = "Filter by Parent Location";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(501, 198);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Places_Manage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 421);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblFilterParent);
             this.Controls.Add(this.lblParent);
             this.Controls.Add(this.lblDescription);
@@ -231,5 +244,6 @@
         private System.Windows.Forms.Label lblFilterParent;
         private System.Windows.Forms.ColumnHeader columnHeaderName;
         private System.Windows.Forms.ColumnHeader columnHeaderParent;
+        private System.Windows.Forms.Button btnSave;
     }
 }

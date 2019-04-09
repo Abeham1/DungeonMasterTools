@@ -18,5 +18,10 @@ namespace Dungeon_Master_Tools
             CATEGORY = "";
             DESCR = "";
         }
+
+        public override string ToString()
+        {
+            return DESCR;
+        }
     }
 }

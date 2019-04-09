@@ -13,3 +13,4 @@ C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\
 C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.TypeVAdd.resources
 C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.Places_Manage.resources
 C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.AddLocation.resources
+C:\Users\abrah\source\repos\Dungeon Master Tools\Dungeon Master Tools\obj\Debug\Dungeon_Master_Tools.NPCsAdd.resources
