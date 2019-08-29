@@ -63,6 +63,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Location = new System.Drawing.Point(12, 15);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
@@ -72,6 +73,7 @@
             // lblParentLocation
             // 
             this.lblParentLocation.AutoSize = true;
+            this.lblParentLocation.BackColor = System.Drawing.Color.Transparent;
             this.lblParentLocation.Location = new System.Drawing.Point(12, 41);
             this.lblParentLocation.Name = "lblParentLocation";
             this.lblParentLocation.Size = new System.Drawing.Size(82, 13);
@@ -81,6 +83,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
             this.lblDescription.Location = new System.Drawing.Point(12, 68);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(60, 13);
@@ -89,18 +92,22 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSubmit.Location = new System.Drawing.Point(118, 193);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // AddLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Dungeon_Master_Tools.Properties.Resources.buttonGradient;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(338, 228);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblDescription);

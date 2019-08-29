@@ -59,6 +59,7 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="ListItemComparer.cs" />
+    <Compile Include="MenuStripRenderer.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="NPCs.cs">
       <SubType>Form</SubType>
@@ -140,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dungeonsAndDragonsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

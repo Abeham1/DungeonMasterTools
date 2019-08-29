@@ -17,6 +17,8 @@ namespace Dungeon_Master_Tools
         public Home()
         {
             InitializeComponent();
+            menuStrip1.Renderer = new MenuStripRenderer();
+            MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void menuItemNPCs_Click(object sender, EventArgs e)
@@ -35,6 +37,16 @@ namespace Dungeon_Master_Tools
         {
             Places_Manage newPlaceManager = new Places_Manage();
             newPlaceManager.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
