@@ -39,6 +39,8 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Location = new System.Drawing.Point(118, 12);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(194, 20);
@@ -46,6 +48,8 @@
             // 
             // txtDescription
             // 
+            this.txtDescription.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescription.Location = new System.Drawing.Point(118, 65);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
@@ -54,6 +58,8 @@
             // 
             // comboBoxParent
             // 
+            this.comboBoxParent.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBoxParent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxParent.FormattingEnabled = true;
             this.comboBoxParent.Location = new System.Drawing.Point(118, 38);
             this.comboBoxParent.Name = "comboBoxParent";
@@ -106,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Dungeon_Master_Tools.Properties.Resources.buttonGradient;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(338, 228);
             this.Controls.Add(this.btnSubmit);

@@ -28,253 +28,253 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewNPCs = new System.Windows.Forms.ListView();
-            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderHomeCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderOccupation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.comboBoxPrimaryFilter = new System.Windows.Forms.ComboBox();
-            this.comboBoxSecondaryFilter = new System.Windows.Forms.ComboBox();
-            this.lblPrimaryFilter = new System.Windows.Forms.Label();
-            this.lblSecondaryFilter = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblHomeCity = new System.Windows.Forms.Label();
-            this.lblOccupation = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.btnOpenOrganization = new System.Windows.Forms.Button();
-            this.txtHomeCity = new System.Windows.Forms.TextBox();
-            this.txtOccupation = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.txtNpcID = new System.Windows.Forms.TextBox();
-            this.lblNpcID = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            listViewNPCs = new System.Windows.Forms.ListView();
+            columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            columnHeaderHomeCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            columnHeaderOccupation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            comboBoxPrimaryFilter = new System.Windows.Forms.ComboBox();
+            comboBoxSecondaryFilter = new System.Windows.Forms.ComboBox();
+            lblPrimaryFilter = new System.Windows.Forms.Label();
+            lblSecondaryFilter = new System.Windows.Forms.Label();
+            lblName = new System.Windows.Forms.Label();
+            lblHomeCity = new System.Windows.Forms.Label();
+            lblOccupation = new System.Windows.Forms.Label();
+            lblDescription = new System.Windows.Forms.Label();
+            txtName = new System.Windows.Forms.TextBox();
+            txtDescription = new System.Windows.Forms.TextBox();
+            btnOpenOrganization = new System.Windows.Forms.Button();
+            txtHomeCity = new System.Windows.Forms.TextBox();
+            txtOccupation = new System.Windows.Forms.TextBox();
+            btnDelete = new System.Windows.Forms.Button();
+            btnRefresh = new System.Windows.Forms.Button();
+            btnAdd = new System.Windows.Forms.Button();
+            txtNpcID = new System.Windows.Forms.TextBox();
+            lblNpcID = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // listViewNPCs
             // 
-            this.listViewNPCs.Alignment = System.Windows.Forms.ListViewAlignment.Left;
-            this.listViewNPCs.AutoArrange = false;
-            this.listViewNPCs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderName,
-            this.columnHeaderHomeCity,
-            this.columnHeaderOccupation});
-            this.listViewNPCs.FullRowSelect = true;
-            this.listViewNPCs.GridLines = true;
-            this.listViewNPCs.Location = new System.Drawing.Point(12, 12);
-            this.listViewNPCs.Name = "listViewNPCs";
-            this.listViewNPCs.Size = new System.Drawing.Size(486, 385);
-            this.listViewNPCs.TabIndex = 0;
-            this.listViewNPCs.UseCompatibleStateImageBehavior = false;
-            this.listViewNPCs.View = System.Windows.Forms.View.Details;
-            this.listViewNPCs.SelectedIndexChanged += new System.EventHandler(this.listViewNPCs_SelectedIndexChanged);
+            listViewNPCs.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            listViewNPCs.AutoArrange = false;
+            listViewNPCs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            columnHeaderName,
+            columnHeaderHomeCity,
+            columnHeaderOccupation});
+            listViewNPCs.FullRowSelect = true;
+            listViewNPCs.GridLines = true;
+            listViewNPCs.Location = new System.Drawing.Point(12, 12);
+            listViewNPCs.Name = "listViewNPCs";
+            listViewNPCs.Size = new System.Drawing.Size(486, 385);
+            listViewNPCs.TabIndex = 0;
+            listViewNPCs.UseCompatibleStateImageBehavior = false;
+            listViewNPCs.View = System.Windows.Forms.View.Details;
+            listViewNPCs.SelectedIndexChanged += new System.EventHandler(listViewNPCs_SelectedIndexChanged);
             // 
             // columnHeaderName
             // 
-            this.columnHeaderName.Text = "Name";
-            this.columnHeaderName.Width = 162;
+            columnHeaderName.Text = "Name";
+            columnHeaderName.Width = 162;
             // 
             // columnHeaderHomeCity
             // 
-            this.columnHeaderHomeCity.Text = "HomeCity";
-            this.columnHeaderHomeCity.Width = 162;
+            columnHeaderHomeCity.Text = "HomeCity";
+            columnHeaderHomeCity.Width = 162;
             // 
             // columnHeaderOccupation
             // 
-            this.columnHeaderOccupation.Text = "Occupation";
-            this.columnHeaderOccupation.Width = 162;
+            columnHeaderOccupation.Text = "Occupation";
+            columnHeaderOccupation.Width = 162;
             // 
             // comboBoxPrimaryFilter
             // 
-            this.comboBoxPrimaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxPrimaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxPrimaryFilter.FormattingEnabled = true;
-            this.comboBoxPrimaryFilter.Location = new System.Drawing.Point(12, 417);
-            this.comboBoxPrimaryFilter.Name = "comboBoxPrimaryFilter";
-            this.comboBoxPrimaryFilter.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxPrimaryFilter.TabIndex = 1;
-            this.comboBoxPrimaryFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxPrimaryFilter_SelectedIndexChanged);
+            comboBoxPrimaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            comboBoxPrimaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            comboBoxPrimaryFilter.FormattingEnabled = true;
+            comboBoxPrimaryFilter.Location = new System.Drawing.Point(12, 417);
+            comboBoxPrimaryFilter.Name = "comboBoxPrimaryFilter";
+            comboBoxPrimaryFilter.Size = new System.Drawing.Size(121, 21);
+            comboBoxPrimaryFilter.TabIndex = 1;
+            comboBoxPrimaryFilter.SelectedIndexChanged += new System.EventHandler(comboBoxPrimaryFilter_SelectedIndexChanged);
             // 
             // comboBoxSecondaryFilter
             // 
-            this.comboBoxSecondaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxSecondaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxSecondaryFilter.FormattingEnabled = true;
-            this.comboBoxSecondaryFilter.Location = new System.Drawing.Point(139, 417);
-            this.comboBoxSecondaryFilter.Name = "comboBoxSecondaryFilter";
-            this.comboBoxSecondaryFilter.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSecondaryFilter.TabIndex = 2;
-            this.comboBoxSecondaryFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecondaryFilter_SelectedIndexChanged);
+            comboBoxSecondaryFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            comboBoxSecondaryFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            comboBoxSecondaryFilter.FormattingEnabled = true;
+            comboBoxSecondaryFilter.Location = new System.Drawing.Point(139, 417);
+            comboBoxSecondaryFilter.Name = "comboBoxSecondaryFilter";
+            comboBoxSecondaryFilter.Size = new System.Drawing.Size(121, 21);
+            comboBoxSecondaryFilter.TabIndex = 2;
+            comboBoxSecondaryFilter.SelectedIndexChanged += new System.EventHandler(comboBoxSecondaryFilter_SelectedIndexChanged);
             // 
             // lblPrimaryFilter
             // 
-            this.lblPrimaryFilter.AutoSize = true;
-            this.lblPrimaryFilter.Location = new System.Drawing.Point(12, 401);
-            this.lblPrimaryFilter.Name = "lblPrimaryFilter";
-            this.lblPrimaryFilter.Size = new System.Drawing.Size(66, 13);
-            this.lblPrimaryFilter.TabIndex = 3;
-            this.lblPrimaryFilter.Text = "Primary Filter";
+            lblPrimaryFilter.AutoSize = true;
+            lblPrimaryFilter.Location = new System.Drawing.Point(12, 401);
+            lblPrimaryFilter.Name = "lblPrimaryFilter";
+            lblPrimaryFilter.Size = new System.Drawing.Size(66, 13);
+            lblPrimaryFilter.TabIndex = 3;
+            lblPrimaryFilter.Text = "Primary Filter";
             // 
             // lblSecondaryFilter
             // 
-            this.lblSecondaryFilter.AutoSize = true;
-            this.lblSecondaryFilter.Location = new System.Drawing.Point(139, 400);
-            this.lblSecondaryFilter.Name = "lblSecondaryFilter";
-            this.lblSecondaryFilter.Size = new System.Drawing.Size(83, 13);
-            this.lblSecondaryFilter.TabIndex = 4;
-            this.lblSecondaryFilter.Text = "Secondary Filter";
+            lblSecondaryFilter.AutoSize = true;
+            lblSecondaryFilter.Location = new System.Drawing.Point(139, 400);
+            lblSecondaryFilter.Name = "lblSecondaryFilter";
+            lblSecondaryFilter.Size = new System.Drawing.Size(83, 13);
+            lblSecondaryFilter.TabIndex = 4;
+            lblSecondaryFilter.Text = "Secondary Filter";
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(507, 41);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 5;
-            this.lblName.Text = "Name";
+            lblName.AutoSize = true;
+            lblName.Location = new System.Drawing.Point(507, 41);
+            lblName.Name = "lblName";
+            lblName.Size = new System.Drawing.Size(35, 13);
+            lblName.TabIndex = 5;
+            lblName.Text = "Name";
             // 
             // lblHomeCity
             // 
-            this.lblHomeCity.AutoSize = true;
-            this.lblHomeCity.Location = new System.Drawing.Point(507, 67);
-            this.lblHomeCity.Name = "lblHomeCity";
-            this.lblHomeCity.Size = new System.Drawing.Size(55, 13);
-            this.lblHomeCity.TabIndex = 6;
-            this.lblHomeCity.Text = "Home City";
+            lblHomeCity.AutoSize = true;
+            lblHomeCity.Location = new System.Drawing.Point(507, 67);
+            lblHomeCity.Name = "lblHomeCity";
+            lblHomeCity.Size = new System.Drawing.Size(55, 13);
+            lblHomeCity.TabIndex = 6;
+            lblHomeCity.Text = "Home City";
             // 
             // lblOccupation
             // 
-            this.lblOccupation.AutoSize = true;
-            this.lblOccupation.Location = new System.Drawing.Point(507, 93);
-            this.lblOccupation.Name = "lblOccupation";
-            this.lblOccupation.Size = new System.Drawing.Size(62, 13);
-            this.lblOccupation.TabIndex = 7;
-            this.lblOccupation.Text = "Occupation";
+            lblOccupation.AutoSize = true;
+            lblOccupation.Location = new System.Drawing.Point(507, 93);
+            lblOccupation.Name = "lblOccupation";
+            lblOccupation.Size = new System.Drawing.Size(62, 13);
+            lblOccupation.TabIndex = 7;
+            lblOccupation.Text = "Occupation";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(507, 119);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(60, 13);
-            this.lblDescription.TabIndex = 8;
-            this.lblDescription.Text = "Description";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new System.Drawing.Point(507, 119);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(60, 13);
+            lblDescription.TabIndex = 8;
+            lblDescription.Text = "Description";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(576, 38);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(190, 20);
-            this.txtName.TabIndex = 9;
+            txtName.Location = new System.Drawing.Point(576, 38);
+            txtName.Name = "txtName";
+            txtName.Size = new System.Drawing.Size(190, 20);
+            txtName.TabIndex = 9;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(576, 116);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(190, 127);
-            this.txtDescription.TabIndex = 10;
+            txtDescription.Location = new System.Drawing.Point(576, 116);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new System.Drawing.Size(190, 127);
+            txtDescription.TabIndex = 10;
             // 
             // btnOpenOrganization
             // 
-            this.btnOpenOrganization.Location = new System.Drawing.Point(498, 415);
-            this.btnOpenOrganization.Name = "btnOpenOrganization";
-            this.btnOpenOrganization.Size = new System.Drawing.Size(106, 23);
-            this.btnOpenOrganization.TabIndex = 13;
-            this.btnOpenOrganization.Text = "Open Organization";
-            this.btnOpenOrganization.UseVisualStyleBackColor = true;
-            this.btnOpenOrganization.Click += new System.EventHandler(this.btnOpenOrganization_Click);
+            btnOpenOrganization.Location = new System.Drawing.Point(498, 415);
+            btnOpenOrganization.Name = "btnOpenOrganization";
+            btnOpenOrganization.Size = new System.Drawing.Size(106, 23);
+            btnOpenOrganization.TabIndex = 13;
+            btnOpenOrganization.Text = "Open Organization";
+            btnOpenOrganization.UseVisualStyleBackColor = true;
+            btnOpenOrganization.Click += new System.EventHandler(btnOpenOrganization_Click);
             // 
             // txtHomeCity
             // 
-            this.txtHomeCity.Location = new System.Drawing.Point(576, 64);
-            this.txtHomeCity.Name = "txtHomeCity";
-            this.txtHomeCity.Size = new System.Drawing.Size(190, 20);
-            this.txtHomeCity.TabIndex = 14;
+            txtHomeCity.Location = new System.Drawing.Point(576, 64);
+            txtHomeCity.Name = "txtHomeCity";
+            txtHomeCity.Size = new System.Drawing.Size(190, 20);
+            txtHomeCity.TabIndex = 14;
             // 
             // txtOccupation
             // 
-            this.txtOccupation.Location = new System.Drawing.Point(576, 90);
-            this.txtOccupation.Name = "txtOccupation";
-            this.txtOccupation.Size = new System.Drawing.Size(190, 20);
-            this.txtOccupation.TabIndex = 15;
+            txtOccupation.Location = new System.Drawing.Point(576, 90);
+            txtOccupation.Name = "txtOccupation";
+            txtOccupation.Size = new System.Drawing.Size(190, 20);
+            txtOccupation.TabIndex = 15;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(691, 417);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 16;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(691, 417);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(75, 23);
+            btnDelete.TabIndex = 16;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += new System.EventHandler(btnDelete_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(269, 415);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 17;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            btnRefresh.Location = new System.Drawing.Point(269, 415);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new System.Drawing.Size(75, 23);
+            btnRefresh.TabIndex = 17;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += new System.EventHandler(btnRefresh_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(610, 415);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new System.Drawing.Point(610, 415);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(75, 23);
+            btnAdd.TabIndex = 18;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += new System.EventHandler(btnAdd_Click);
             // 
             // txtNpcID
             // 
-            this.txtNpcID.Location = new System.Drawing.Point(576, 12);
-            this.txtNpcID.Name = "txtNpcID";
-            this.txtNpcID.Size = new System.Drawing.Size(190, 20);
-            this.txtNpcID.TabIndex = 19;
+            txtNpcID.Location = new System.Drawing.Point(576, 12);
+            txtNpcID.Name = "txtNpcID";
+            txtNpcID.Size = new System.Drawing.Size(190, 20);
+            txtNpcID.TabIndex = 19;
             // 
             // lblNpcID
             // 
-            this.lblNpcID.AutoSize = true;
-            this.lblNpcID.Location = new System.Drawing.Point(507, 15);
-            this.lblNpcID.Name = "lblNpcID";
-            this.lblNpcID.Size = new System.Drawing.Size(43, 13);
-            this.lblNpcID.TabIndex = 20;
-            this.lblNpcID.Text = "NPC ID";
+            lblNpcID.AutoSize = true;
+            lblNpcID.Location = new System.Drawing.Point(507, 15);
+            lblNpcID.Name = "lblNpcID";
+            lblNpcID.Size = new System.Drawing.Size(43, 13);
+            lblNpcID.TabIndex = 20;
+            lblNpcID.Text = "NPC ID";
             // 
             // NPCs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 450);
-            this.Controls.Add(this.lblNpcID);
-            this.Controls.Add(this.txtNpcID);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.txtOccupation);
-            this.Controls.Add(this.txtHomeCity);
-            this.Controls.Add(this.btnOpenOrganization);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblOccupation);
-            this.Controls.Add(this.lblHomeCity);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblSecondaryFilter);
-            this.Controls.Add(this.lblPrimaryFilter);
-            this.Controls.Add(this.comboBoxSecondaryFilter);
-            this.Controls.Add(this.comboBoxPrimaryFilter);
-            this.Controls.Add(this.listViewNPCs);
-            this.Name = "NPCs";
-            this.Text = "NPCs";
-            this.Load += new System.EventHandler(this.NPCs_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(778, 450);
+            Controls.Add(lblNpcID);
+            Controls.Add(txtNpcID);
+            Controls.Add(btnAdd);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnDelete);
+            Controls.Add(txtOccupation);
+            Controls.Add(txtHomeCity);
+            Controls.Add(btnOpenOrganization);
+            Controls.Add(txtDescription);
+            Controls.Add(txtName);
+            Controls.Add(lblDescription);
+            Controls.Add(lblOccupation);
+            Controls.Add(lblHomeCity);
+            Controls.Add(lblName);
+            Controls.Add(lblSecondaryFilter);
+            Controls.Add(lblPrimaryFilter);
+            Controls.Add(comboBoxSecondaryFilter);
+            Controls.Add(comboBoxPrimaryFilter);
+            Controls.Add(listViewNPCs);
+            Name = "NPCs";
+            Text = "NPCs";
+            Load += new System.EventHandler(NPCs_Load);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

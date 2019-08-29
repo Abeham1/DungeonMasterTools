@@ -28,181 +28,181 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewTypeV = new System.Windows.Forms.ListView();
-            this.headerName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.headerCategory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.comboBoxCategory = new System.Windows.Forms.ComboBox();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.lblCategoryAdd = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.txtType_ID = new System.Windows.Forms.TextBox();
-            this.lblType_ID = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            listViewTypeV = new System.Windows.Forms.ListView();
+            headerName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            headerCategory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            comboBoxCategory = new System.Windows.Forms.ComboBox();
+            lblCategory = new System.Windows.Forms.Label();
+            lblCategoryAdd = new System.Windows.Forms.Label();
+            lblDescription = new System.Windows.Forms.Label();
+            txtCategory = new System.Windows.Forms.TextBox();
+            txtDescription = new System.Windows.Forms.TextBox();
+            btnAdd = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            txtType_ID = new System.Windows.Forms.TextBox();
+            lblType_ID = new System.Windows.Forms.Label();
+            btnRefresh = new System.Windows.Forms.Button();
+            btnSave = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // listViewTypeV
             // 
-            this.listViewTypeV.Alignment = System.Windows.Forms.ListViewAlignment.Left;
-            this.listViewTypeV.AutoArrange = false;
-            this.listViewTypeV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.headerName,
-            this.headerCategory});
-            this.listViewTypeV.FullRowSelect = true;
-            this.listViewTypeV.GridLines = true;
-            this.listViewTypeV.Location = new System.Drawing.Point(12, 12);
-            this.listViewTypeV.Name = "listViewTypeV";
-            this.listViewTypeV.Size = new System.Drawing.Size(400, 386);
-            this.listViewTypeV.TabIndex = 0;
-            this.listViewTypeV.UseCompatibleStateImageBehavior = false;
-            this.listViewTypeV.View = System.Windows.Forms.View.Details;
-            this.listViewTypeV.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewTypeV_ColumnClick);
-            this.listViewTypeV.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listViewTypeV_ItemSelectionChanged);
+            listViewTypeV.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            listViewTypeV.AutoArrange = false;
+            listViewTypeV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            headerName,
+            headerCategory});
+            listViewTypeV.FullRowSelect = true;
+            listViewTypeV.GridLines = true;
+            listViewTypeV.Location = new System.Drawing.Point(12, 12);
+            listViewTypeV.Name = "listViewTypeV";
+            listViewTypeV.Size = new System.Drawing.Size(400, 386);
+            listViewTypeV.TabIndex = 0;
+            listViewTypeV.UseCompatibleStateImageBehavior = false;
+            listViewTypeV.View = System.Windows.Forms.View.Details;
+            listViewTypeV.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(listViewTypeV_ColumnClick);
+            listViewTypeV.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(listViewTypeV_ItemSelectionChanged);
             // 
             // headerName
             // 
-            this.headerName.Text = "Name";
-            this.headerName.Width = 200;
+            headerName.Text = "Name";
+            headerName.Width = 200;
             // 
             // headerCategory
             // 
-            this.headerCategory.Text = "Category";
-            this.headerCategory.Width = 200;
+            headerCategory.Text = "Category";
+            headerCategory.Width = 200;
             // 
             // comboBoxCategory
             // 
-            this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(12, 417);
-            this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategory.TabIndex = 1;
-            this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
+            comboBoxCategory.FormattingEnabled = true;
+            comboBoxCategory.Location = new System.Drawing.Point(12, 417);
+            comboBoxCategory.Name = "comboBoxCategory";
+            comboBoxCategory.Size = new System.Drawing.Size(121, 21);
+            comboBoxCategory.TabIndex = 1;
+            comboBoxCategory.SelectedIndexChanged += new System.EventHandler(comboBoxCategory_SelectedIndexChanged);
             // 
             // lblCategory
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(12, 401);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(49, 13);
-            this.lblCategory.TabIndex = 2;
-            this.lblCategory.Text = "Category";
+            lblCategory.AutoSize = true;
+            lblCategory.Location = new System.Drawing.Point(12, 401);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new System.Drawing.Size(49, 13);
+            lblCategory.TabIndex = 2;
+            lblCategory.Text = "Category";
             // 
             // lblCategoryAdd
             // 
-            this.lblCategoryAdd.AutoSize = true;
-            this.lblCategoryAdd.Location = new System.Drawing.Point(430, 41);
-            this.lblCategoryAdd.Name = "lblCategoryAdd";
-            this.lblCategoryAdd.Size = new System.Drawing.Size(49, 13);
-            this.lblCategoryAdd.TabIndex = 4;
-            this.lblCategoryAdd.Text = "Category";
+            lblCategoryAdd.AutoSize = true;
+            lblCategoryAdd.Location = new System.Drawing.Point(430, 41);
+            lblCategoryAdd.Name = "lblCategoryAdd";
+            lblCategoryAdd.Size = new System.Drawing.Size(49, 13);
+            lblCategoryAdd.TabIndex = 4;
+            lblCategoryAdd.Text = "Category";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(430, 64);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(60, 13);
-            this.lblDescription.TabIndex = 5;
-            this.lblDescription.Text = "Description";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new System.Drawing.Point(430, 64);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(60, 13);
+            lblDescription.TabIndex = 5;
+            lblDescription.Text = "Description";
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(496, 38);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(177, 20);
-            this.txtCategory.TabIndex = 7;
+            txtCategory.Location = new System.Drawing.Point(496, 38);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new System.Drawing.Size(177, 20);
+            txtCategory.TabIndex = 7;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(496, 64);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(177, 119);
-            this.txtDescription.TabIndex = 8;
+            txtDescription.Location = new System.Drawing.Point(496, 64);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new System.Drawing.Size(177, 119);
+            txtDescription.TabIndex = 8;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(517, 415);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 9;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new System.Drawing.Point(517, 415);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(75, 23);
+            btnAdd.TabIndex = 9;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += new System.EventHandler(btnAdd_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(598, 415);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(598, 415);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(75, 23);
+            btnDelete.TabIndex = 10;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += new System.EventHandler(btnDelete_Click);
             // 
             // txtType_ID
             // 
-            this.txtType_ID.Location = new System.Drawing.Point(496, 12);
-            this.txtType_ID.Name = "txtType_ID";
-            this.txtType_ID.Size = new System.Drawing.Size(177, 20);
-            this.txtType_ID.TabIndex = 11;
+            txtType_ID.Location = new System.Drawing.Point(496, 12);
+            txtType_ID.Name = "txtType_ID";
+            txtType_ID.Size = new System.Drawing.Size(177, 20);
+            txtType_ID.TabIndex = 11;
             // 
             // lblType_ID
             // 
-            this.lblType_ID.AutoSize = true;
-            this.lblType_ID.Location = new System.Drawing.Point(430, 15);
-            this.lblType_ID.Name = "lblType_ID";
-            this.lblType_ID.Size = new System.Drawing.Size(52, 13);
-            this.lblType_ID.TabIndex = 12;
-            this.lblType_ID.Text = "TYPE_ID";
+            lblType_ID.AutoSize = true;
+            lblType_ID.Location = new System.Drawing.Point(430, 15);
+            lblType_ID.Name = "lblType_ID";
+            lblType_ID.Size = new System.Drawing.Size(52, 13);
+            lblType_ID.TabIndex = 12;
+            lblType_ID.Text = "TYPE_ID";
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(337, 415);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 13;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            btnRefresh.Location = new System.Drawing.Point(337, 415);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new System.Drawing.Size(75, 23);
+            btnRefresh.TabIndex = 13;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += new System.EventHandler(btnRefresh_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(496, 190);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 14;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.Location = new System.Drawing.Point(496, 190);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new System.Drawing.Size(75, 23);
+            btnSave.TabIndex = 14;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += new System.EventHandler(btnSave_Click);
             // 
             // TYPE_VManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 450);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.lblType_ID);
-            this.Controls.Add(this.txtType_ID);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.txtCategory);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblCategoryAdd);
-            this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.comboBoxCategory);
-            this.Controls.Add(this.listViewTypeV);
-            this.Name = "TYPE_VManage";
-            this.Text = "Manage the TYPE_V table";
-            this.Load += new System.EventHandler(this.TYPE_VManage_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(685, 450);
+            Controls.Add(btnSave);
+            Controls.Add(btnRefresh);
+            Controls.Add(lblType_ID);
+            Controls.Add(txtType_ID);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAdd);
+            Controls.Add(txtDescription);
+            Controls.Add(txtCategory);
+            Controls.Add(lblDescription);
+            Controls.Add(lblCategoryAdd);
+            Controls.Add(lblCategory);
+            Controls.Add(comboBoxCategory);
+            Controls.Add(listViewTypeV);
+            Name = "TYPE_VManage";
+            Text = "Manage the TYPE_V table";
+            Load += new System.EventHandler(TYPE_VManage_Load);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

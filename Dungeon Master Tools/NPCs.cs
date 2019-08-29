@@ -22,6 +22,7 @@ namespace Dungeon_Master_Tools
         {
             InitializeComponent();
             AllNPCs = new List<NPC>();
+            UseWaitCursor = false;
             conn.ConnectionString =
                 "Data Source=(LocalDb)\\LocalDB;" +
                 "Initial Catalog=master;" +

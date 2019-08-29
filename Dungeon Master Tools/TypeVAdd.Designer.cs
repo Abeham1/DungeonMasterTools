@@ -28,70 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            txtCategory = new System.Windows.Forms.TextBox();
+            lblCategory = new System.Windows.Forms.Label();
+            lblDescription = new System.Windows.Forms.Label();
+            txtDescription = new System.Windows.Forms.TextBox();
+            btnSubmit = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(78, 12);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(153, 20);
-            this.txtCategory.TabIndex = 0;
+            txtCategory.Location = new System.Drawing.Point(78, 12);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new System.Drawing.Size(153, 20);
+            txtCategory.TabIndex = 0;
             // 
             // lblCategory
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(12, 15);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(49, 13);
-            this.lblCategory.TabIndex = 2;
-            this.lblCategory.Text = "Category";
+            lblCategory.AutoSize = true;
+            lblCategory.Location = new System.Drawing.Point(12, 15);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new System.Drawing.Size(49, 13);
+            lblCategory.TabIndex = 2;
+            lblCategory.Text = "Category";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(12, 41);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(60, 13);
-            this.lblDescription.TabIndex = 3;
-            this.lblDescription.Text = "Description";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new System.Drawing.Point(12, 41);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(60, 13);
+            lblDescription.TabIndex = 3;
+            lblDescription.Text = "Description";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(78, 38);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(153, 98);
-            this.txtDescription.TabIndex = 4;
+            txtDescription.Location = new System.Drawing.Point(78, 38);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new System.Drawing.Size(153, 98);
+            txtDescription.TabIndex = 4;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(165, 147);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmit.TabIndex = 5;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            btnSubmit.Location = new System.Drawing.Point(165, 147);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new System.Drawing.Size(75, 23);
+            btnSubmit.TabIndex = 5;
+            btnSubmit.Text = "Submit";
+            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += new System.EventHandler(btnSubmit_Click);
             // 
             // TypeVAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 182);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.txtCategory);
-            this.Name = "TypeVAdd";
-            this.Text = "TypeVAdd";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(252, 182);
+            Controls.Add(btnSubmit);
+            Controls.Add(txtDescription);
+            Controls.Add(lblDescription);
+            Controls.Add(lblCategory);
+            Controls.Add(txtCategory);
+            Name = "TypeVAdd";
+            Text = "TypeVAdd";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

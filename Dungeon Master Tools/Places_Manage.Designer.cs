@@ -28,201 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewPlaces = new System.Windows.Forms.ListView();
-            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderParent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.comboBoxFilterParent = new System.Windows.Forms.ComboBox();
-            this.txtPlace_id = new System.Windows.Forms.TextBox();
-            this.txtParentLocation = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.lblPlaceId = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.lblParent = new System.Windows.Forms.Label();
-            this.lblFilterParent = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            listViewPlaces = new System.Windows.Forms.ListView();
+            columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            columnHeaderParent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            btnDelete = new System.Windows.Forms.Button();
+            btnAdd = new System.Windows.Forms.Button();
+            btnRefresh = new System.Windows.Forms.Button();
+            comboBoxFilterParent = new System.Windows.Forms.ComboBox();
+            txtPlace_id = new System.Windows.Forms.TextBox();
+            txtParentLocation = new System.Windows.Forms.TextBox();
+            txtName = new System.Windows.Forms.TextBox();
+            txtDescription = new System.Windows.Forms.TextBox();
+            lblPlaceId = new System.Windows.Forms.Label();
+            lblName = new System.Windows.Forms.Label();
+            lblDescription = new System.Windows.Forms.Label();
+            lblParent = new System.Windows.Forms.Label();
+            lblFilterParent = new System.Windows.Forms.Label();
+            btnSave = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // listViewPlaces
             // 
-            this.listViewPlaces.Alignment = System.Windows.Forms.ListViewAlignment.Left;
-            this.listViewPlaces.AutoArrange = false;
-            this.listViewPlaces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderName,
-            this.columnHeaderParent});
-            this.listViewPlaces.FullRowSelect = true;
-            this.listViewPlaces.GridLines = true;
-            this.listViewPlaces.Location = new System.Drawing.Point(12, 12);
-            this.listViewPlaces.Name = "listViewPlaces";
-            this.listViewPlaces.Size = new System.Drawing.Size(400, 359);
-            this.listViewPlaces.TabIndex = 0;
-            this.listViewPlaces.UseCompatibleStateImageBehavior = false;
-            this.listViewPlaces.View = System.Windows.Forms.View.Details;
-            this.listViewPlaces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewPlaces_ColumnClick);
-            this.listViewPlaces.SelectedIndexChanged += new System.EventHandler(this.listViewPlaces_SelectedIndexChanged);
+            listViewPlaces.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            listViewPlaces.AutoArrange = false;
+            listViewPlaces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            columnHeaderName,
+            columnHeaderParent});
+            listViewPlaces.FullRowSelect = true;
+            listViewPlaces.GridLines = true;
+            listViewPlaces.Location = new System.Drawing.Point(12, 12);
+            listViewPlaces.Name = "listViewPlaces";
+            listViewPlaces.Size = new System.Drawing.Size(400, 359);
+            listViewPlaces.TabIndex = 0;
+            listViewPlaces.UseCompatibleStateImageBehavior = false;
+            listViewPlaces.View = System.Windows.Forms.View.Details;
+            listViewPlaces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(listViewPlaces_ColumnClick);
+            listViewPlaces.SelectedIndexChanged += new System.EventHandler(listViewPlaces_SelectedIndexChanged);
             // 
             // columnHeaderName
             // 
-            this.columnHeaderName.Text = "Name";
-            this.columnHeaderName.Width = 200;
+            columnHeaderName.Text = "Name";
+            columnHeaderName.Width = 200;
             // 
             // columnHeaderParent
             // 
-            this.columnHeaderParent.Text = "Parent Location";
-            this.columnHeaderParent.Width = 200;
+            columnHeaderParent.Text = "Parent Location";
+            columnHeaderParent.Width = 200;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(582, 390);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(582, 390);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(75, 23);
+            btnDelete.TabIndex = 1;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += new System.EventHandler(btnDelete_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(491, 390);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new System.Drawing.Point(491, 390);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(75, 23);
+            btnAdd.TabIndex = 2;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += new System.EventHandler(btnAdd_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(139, 390);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 3;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            btnRefresh.Location = new System.Drawing.Point(139, 390);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new System.Drawing.Size(75, 23);
+            btnRefresh.TabIndex = 3;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += new System.EventHandler(btnRefresh_Click);
             // 
             // comboBoxFilterParent
             // 
-            this.comboBoxFilterParent.FormattingEnabled = true;
-            this.comboBoxFilterParent.Location = new System.Drawing.Point(12, 390);
-            this.comboBoxFilterParent.Name = "comboBoxFilterParent";
-            this.comboBoxFilterParent.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxFilterParent.TabIndex = 4;
-            this.comboBoxFilterParent.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilterParent_SelectedIndexChanged);
+            comboBoxFilterParent.FormattingEnabled = true;
+            comboBoxFilterParent.Location = new System.Drawing.Point(12, 390);
+            comboBoxFilterParent.Name = "comboBoxFilterParent";
+            comboBoxFilterParent.Size = new System.Drawing.Size(121, 21);
+            comboBoxFilterParent.TabIndex = 4;
+            comboBoxFilterParent.SelectedIndexChanged += new System.EventHandler(comboBoxFilterParent_SelectedIndexChanged);
             // 
             // txtPlace_id
             // 
-            this.txtPlace_id.Location = new System.Drawing.Point(501, 12);
-            this.txtPlace_id.Name = "txtPlace_id";
-            this.txtPlace_id.Size = new System.Drawing.Size(156, 20);
-            this.txtPlace_id.TabIndex = 5;
+            txtPlace_id.Location = new System.Drawing.Point(501, 12);
+            txtPlace_id.Name = "txtPlace_id";
+            txtPlace_id.Size = new System.Drawing.Size(156, 20);
+            txtPlace_id.TabIndex = 5;
             // 
             // txtParentLocation
             // 
-            this.txtParentLocation.Location = new System.Drawing.Point(501, 68);
-            this.txtParentLocation.Name = "txtParentLocation";
-            this.txtParentLocation.Size = new System.Drawing.Size(156, 20);
-            this.txtParentLocation.TabIndex = 6;
+            txtParentLocation.Location = new System.Drawing.Point(501, 68);
+            txtParentLocation.Name = "txtParentLocation";
+            txtParentLocation.Size = new System.Drawing.Size(156, 20);
+            txtParentLocation.TabIndex = 6;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(501, 38);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(156, 20);
-            this.txtName.TabIndex = 7;
+            txtName.Location = new System.Drawing.Point(501, 38);
+            txtName.Name = "txtName";
+            txtName.Size = new System.Drawing.Size(156, 20);
+            txtName.TabIndex = 7;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(501, 94);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(156, 97);
-            this.txtDescription.TabIndex = 8;
+            txtDescription.Location = new System.Drawing.Point(501, 94);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new System.Drawing.Size(156, 97);
+            txtDescription.TabIndex = 8;
             // 
             // lblPlaceId
             // 
-            this.lblPlaceId.AutoSize = true;
-            this.lblPlaceId.Location = new System.Drawing.Point(418, 15);
-            this.lblPlaceId.Name = "lblPlaceId";
-            this.lblPlaceId.Size = new System.Drawing.Size(51, 13);
-            this.lblPlaceId.TabIndex = 9;
-            this.lblPlaceId.Text = "Place_ID";
+            lblPlaceId.AutoSize = true;
+            lblPlaceId.Location = new System.Drawing.Point(418, 15);
+            lblPlaceId.Name = "lblPlaceId";
+            lblPlaceId.Size = new System.Drawing.Size(51, 13);
+            lblPlaceId.TabIndex = 9;
+            lblPlaceId.Text = "Place_ID";
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(418, 41);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 10;
-            this.lblName.Text = "Name";
+            lblName.AutoSize = true;
+            lblName.Location = new System.Drawing.Point(418, 41);
+            lblName.Name = "lblName";
+            lblName.Size = new System.Drawing.Size(35, 13);
+            lblName.TabIndex = 10;
+            lblName.Text = "Name";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(418, 97);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(60, 13);
-            this.lblDescription.TabIndex = 11;
-            this.lblDescription.Text = "Description";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new System.Drawing.Point(418, 97);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(60, 13);
+            lblDescription.TabIndex = 11;
+            lblDescription.Text = "Description";
             // 
             // lblParent
             // 
-            this.lblParent.AutoSize = true;
-            this.lblParent.Location = new System.Drawing.Point(418, 71);
-            this.lblParent.Name = "lblParent";
-            this.lblParent.Size = new System.Drawing.Size(82, 13);
-            this.lblParent.TabIndex = 12;
-            this.lblParent.Text = "Parent Location";
+            lblParent.AutoSize = true;
+            lblParent.Location = new System.Drawing.Point(418, 71);
+            lblParent.Name = "lblParent";
+            lblParent.Size = new System.Drawing.Size(82, 13);
+            lblParent.TabIndex = 12;
+            lblParent.Text = "Parent Location";
             // 
             // lblFilterParent
             // 
-            this.lblFilterParent.AutoSize = true;
-            this.lblFilterParent.Location = new System.Drawing.Point(12, 374);
-            this.lblFilterParent.Name = "lblFilterParent";
-            this.lblFilterParent.Size = new System.Drawing.Size(121, 13);
-            this.lblFilterParent.TabIndex = 13;
-            this.lblFilterParent.Text = "Filter by Parent Location";
+            lblFilterParent.AutoSize = true;
+            lblFilterParent.Location = new System.Drawing.Point(12, 374);
+            lblFilterParent.Name = "lblFilterParent";
+            lblFilterParent.Size = new System.Drawing.Size(121, 13);
+            lblFilterParent.TabIndex = 13;
+            lblFilterParent.Text = "Filter by Parent Location";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(501, 198);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 14;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.Location = new System.Drawing.Point(501, 198);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new System.Drawing.Size(75, 23);
+            btnSave.TabIndex = 14;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += new System.EventHandler(btnSave_Click);
             // 
             // Places_Manage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 421);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.lblFilterParent);
-            this.Controls.Add(this.lblParent);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblPlaceId);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.txtParentLocation);
-            this.Controls.Add(this.txtPlace_id);
-            this.Controls.Add(this.comboBoxFilterParent);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.listViewPlaces);
-            this.Name = "Places_Manage";
-            this.Text = "Places_Manage";
-            this.Load += new System.EventHandler(this.Places_Manage_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(679, 421);
+            Controls.Add(btnSave);
+            Controls.Add(lblFilterParent);
+            Controls.Add(lblParent);
+            Controls.Add(lblDescription);
+            Controls.Add(lblName);
+            Controls.Add(lblPlaceId);
+            Controls.Add(txtDescription);
+            Controls.Add(txtName);
+            Controls.Add(txtParentLocation);
+            Controls.Add(txtPlace_id);
+            Controls.Add(comboBoxFilterParent);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnAdd);
+            Controls.Add(btnDelete);
+            Controls.Add(listViewPlaces);
+            Name = "Places_Manage";
+            Text = "Places_Manage";
+            Load += new System.EventHandler(Places_Manage_Load);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
