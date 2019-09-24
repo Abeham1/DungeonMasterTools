@@ -18,6 +18,7 @@ namespace Dungeon_Master_Tools
         private Color hoverColor = Color.FromName(ConfigurationManager.AppSettings["secondaryColor"]);
         private Color backgroundColor = Color.FromName(ConfigurationManager.AppSettings["primaryColor"]);
         List<SIDEBAR_BUTTON> ListButtons = new List<SIDEBAR_BUTTON>();
+        public int currentSideBarId = 0;
 
         public SideBar()
         {
@@ -65,17 +66,18 @@ namespace Dungeon_Master_Tools
             }
         }
 
-        public SideBar(List<SIDEBAR_BUTTON> listB)
+        public SideBar(List<SIDEBAR_BUTTON> listB, List<SIDEBAR_BUTTON> completeList)
         {
             InitializeComponent();
             button1.Visible = false;
             BackColor = backgroundColor;
+            ListButtons = completeList;
             foreach(SIDEBAR_BUTTON button in listB)
             {
                 SideBarButton newButton = new SideBarButton();
                 newButton.button1.Tag = (button).SIDEBAR_BUTTON_ID;
                 newButton.ButtonText((button).BUTTON_TEXT);
-                newButton.Click += new EventHandler(Button_Click);
+                newButton.button1.Click += new EventHandler(Button_Click);
                 flowLayoutPanel1.Controls.Add(newButton);
             }
         }
@@ -89,25 +91,20 @@ namespace Dungeon_Master_Tools
                 if (!button.displayed) {
                     
                     List<SIDEBAR_BUTTON> list = ListButtons.FindAll(x => x.PARENT_BUTTON == button.SIDEBAR_BUTTON_ID);
-                    SideBar sideBar = new SideBar(list);
+                    SideBar sideBar = new SideBar(list, ListButtons);
                     sideBar.Tag = "CHILD_SIDEBAR_BUTTON_" + button.SIDEBAR_BUTTON_ID.ToString();
                     sideBar.Parent = this.Parent;
                     sideBar.Location = (sender as Button).FindForm().PointToClient((sender as Button).Parent.PointToScreen(new Point((sender as Button).Bounds.Right, (sender as Button).Bounds.Top)));
                     ListButtons.Find(x => x.SIDEBAR_BUTTON_ID == (int)(sender as Button).Tag).displayed = true;
+                    if(currentSideBarId != 0)
+                    {
+                        closeCurrentSideBar(currentSideBarId);
+                    }
+                    currentSideBarId = button.SIDEBAR_BUTTON_ID;
                 }
                 else
                 {
-                    foreach (Control control in Parent.Controls)
-                    {
-                        if (control.Tag != null)
-                        {
-                            if (control.Tag.ToString() == "CHILD_SIDEBAR_BUTTON_" + button.SIDEBAR_BUTTON_ID.ToString())
-                            {
-                                control.Dispose();
-                            }
-                        }
-                    }
-                    ListButtons.Find(x => x.SIDEBAR_BUTTON_ID == (int)(sender as Button).Tag).displayed = false;
+                    closeCurrentSideBar(button.SIDEBAR_BUTTON_ID);
                 }
             }
             else
@@ -118,6 +115,27 @@ namespace Dungeon_Master_Tools
                         break;
                 }
             }
+        }
+
+        public void closeCurrentSideBar(int id, bool closeall)
+        {
+            foreach (Control control in Parent.Controls)
+            {
+                if (control.Tag != null)
+                {
+                    if (closeall && control.Tag.ToString().Contains("CHILD_SIDEBAR"))
+                    {
+                        control.Dispose();
+                        continue;
+                    }
+                    if (control.Tag.ToString() == "CHILD_SIDEBAR_BUTTON_" + id.ToString())
+                    {
+                        control.Dispose();
+                    }
+                }
+            }
+            ListButtons.Find(x => x.SIDEBAR_BUTTON_ID == id).displayed = false;
+            currentSideBarId = 0;
         }
     }
 }

@@ -54,6 +54,7 @@
       <DependentUpon>AddLocation.cs</DependentUpon>
     </Compile>
     <Compile Include="DataObjects\SIDEBAR_BUTTON.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
