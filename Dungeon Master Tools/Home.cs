@@ -20,7 +20,7 @@ namespace Dungeon_Master_Tools
         {
             InitializeComponent();
             //Paint += new PaintEventHandler(color_Background);
-            menuStrip1.Renderer = new MenuStripRenderer();
+            //menuStrip1.Renderer = new MenuStripRenderer();
             MaximizedBounds = Screen.FromHandle(Handle).WorkingArea;
         }
 

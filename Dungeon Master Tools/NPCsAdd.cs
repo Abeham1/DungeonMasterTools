@@ -18,7 +18,7 @@ namespace Dungeon_Master_Tools
         public NPCsAdd()
         {
             InitializeComponent();
-            conn.ConnectionString = "Data Source=(LocalDb)\\LocalDB;" + "Initial Catalog=master;" + "Integrated Security=SSPI;";
+       conn.ConnectionString = "Data Source=(LocalDb)\\LocalDB;" + "Initial Catalog=master;" + "Integrated Security=SSPI;";
         }
 
         public void NPCsAdd_Load(object sender, EventArgs e)

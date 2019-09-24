@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Dungeon_Master_Tools
 {
@@ -22,10 +23,7 @@ namespace Dungeon_Master_Tools
         {
             InitializeComponent();
             AllPlaces = new List<PLACE>();
-            conn.ConnectionString =
-                "Data Source=(LocalDb)\\LocalDB;" +
-                "Initial Catalog=master;" +
-                "Integrated Security=SSPI;";
+            conn.ConnectionString = ConfigurationManager.AppSettings["connectionString"];
         }
 
         private void Places_Manage_Load(object sender, EventArgs e)

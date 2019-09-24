@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Dungeon_Master_Tools
 {
@@ -18,7 +19,7 @@ namespace Dungeon_Master_Tools
         public AddLocation()
         {
             InitializeComponent();
-            conn.ConnectionString = "Data Source=(LocalDb)\\LocalDB;" + "Initial Catalog=master;" + "Integrated Security=SSPI;";
+            conn.ConnectionString = ConfigurationManager.AppSettings["connectionString"];
         }
 
         public void AddLocation_Load(object sender, EventArgs e)

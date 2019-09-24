@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,15 +53,16 @@
     <Compile Include="AddLocation.Designer.cs">
       <DependentUpon>AddLocation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataObjects\SIDEBAR_BUTTON.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListItemComparer.cs" />
-    <Compile Include="MenuStripRenderer.cs" />
-    <Compile Include="NPC.cs" />
+    <Compile Include="DataObjects\ListItemComparer.cs" />
+    <Compile Include="DataObjects\MenuStripRenderer.cs" />
+    <Compile Include="DataObjects\NPC.cs" />
     <Compile Include="NPCs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,7 +75,7 @@
     <Compile Include="NPCsAdd.Designer.cs">
       <DependentUpon>NPCsAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="PLACE.cs" />
+    <Compile Include="DataObjects\PLACE.cs" />
     <Compile Include="Places_Manage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,13 +84,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormControls\SideBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\SideBar.Designer.cs">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\SideBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\SideBarButton.Designer.cs">
+      <DependentUpon>SideBarButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="TypeVAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TypeVAdd.Designer.cs">
       <DependentUpon>TypeVAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="TYPE_V.cs" />
+    <Compile Include="DataObjects\TYPE_V.cs" />
     <Compile Include="TYPE_VManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="AddLocation.resx">
       <DependentUpon>AddLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\SideBarButton.resx">
+      <DependentUpon>SideBarButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -120,6 +137,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="FormControls\SideBar.resx">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TypeVAdd.resx">
       <DependentUpon>TypeVAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,7 +157,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dungeonsAndDragonsLogo.png" />
@@ -150,6 +172,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\greyBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bookicon.png" />
+    <EmbeddedResource Include="Resources\compassIcon.png" />
+    <EmbeddedResource Include="Resources\databaseicon.png" />
+    <EmbeddedResource Include="Resources\homeIcon.jpg" />
+    <EmbeddedResource Include="Resources\shieldIcon.png" />
+    <EmbeddedResource Include="Resources\socialicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compassIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\databaseicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shieldIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socialicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
